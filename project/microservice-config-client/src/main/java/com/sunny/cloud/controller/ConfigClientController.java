@@ -10,8 +10,15 @@ public class ConfigClientController {
     @Value("${profile}")
     private String profile;
 
+    @Value("${test}")
+    private String test;
+
+    @Value("${pod}")
+    private String pod;
+
     @GetMapping("/profile")
     public String getProfile() {
         return profile;
     }
+
 }
